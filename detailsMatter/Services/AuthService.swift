@@ -1,6 +1,8 @@
 import Foundation
+#if !DEMO_MODE
 import FirebaseAuth
 import FirebaseFirestore
+#endif
 
 @Observable
 final class AuthService {
@@ -12,9 +14,14 @@ final class AuthService {
     var verificationID: String?
     var errorMessage: String?
 
+    #if !DEMO_MODE
     private var authListener: AuthStateDidChangeListenerHandle?
+    #endif
 
     private init() {
+        #if DEMO_MODE
+        isLoading = false
+        #else
         authListener = Auth.auth().addStateDidChangeListener { [weak self] _, firebaseUser in
             guard let self else { return }
             if let firebaseUser {
@@ -25,29 +32,43 @@ final class AuthService {
                 self.isLoading = false
             }
         }
+        #endif
     }
 
     // MARK: - Phone Auth (Clients)
 
     func sendVerificationCode(phoneNumber: String) async {
         errorMessage = nil
+        #if DEMO_MODE
+        try? await Task.sleep(for: .seconds(1))
+        verificationID = "demo-verification-id"
+        #else
         do {
             let id = try await PhoneAuthProvider.provider().verifyPhoneNumber(phoneNumber, uiDelegate: nil)
             verificationID = id
         } catch {
             errorMessage = error.localizedDescription
         }
+        #endif
     }
 
     func verifySMSCode(_ code: String, name: String) async {
-        guard let verificationID else {
+        guard verificationID != nil else {
             errorMessage = "No verification ID. Please request a new code."
             return
         }
         errorMessage = nil
         isLoading = true
+        #if DEMO_MODE
+        try? await Task.sleep(for: .seconds(0.5))
+        var user = DemoData.clientUser
+        user.name = name
+        currentUser = user
+        isAuthenticated = true
+        isLoading = false
+        #else
         do {
-            let credential = PhoneAuthProvider.provider().credential(withVerificationID: verificationID, verificationCode: code)
+            let credential = PhoneAuthProvider.provider().credential(withVerificationID: verificationID!, verificationCode: code)
             let result = try await Auth.auth().signIn(with: credential)
             let uid = result.user.uid
             let phone = result.user.phoneNumber ?? ""
@@ -70,6 +91,7 @@ final class AuthService {
             errorMessage = error.localizedDescription
             isLoading = false
         }
+        #endif
     }
 
     // MARK: - Email Auth (Admin)
@@ -77,6 +99,12 @@ final class AuthService {
     func signInAdmin(email: String, password: String) async {
         errorMessage = nil
         isLoading = true
+        #if DEMO_MODE
+        try? await Task.sleep(for: .seconds(0.5))
+        currentUser = DemoData.adminUser
+        isAuthenticated = true
+        isLoading = false
+        #else
         do {
             let result = try await Auth.auth().signIn(withEmail: email, password: password)
             let uid = result.user.uid
@@ -98,21 +126,26 @@ final class AuthService {
             errorMessage = error.localizedDescription
             isLoading = false
         }
+        #endif
     }
 
     // MARK: - Session
 
     func signOut() {
+        #if !DEMO_MODE
         do {
             try Auth.auth().signOut()
-            currentUser = nil
-            isAuthenticated = false
-            verificationID = nil
         } catch {
             errorMessage = error.localizedDescription
+            return
         }
+        #endif
+        currentUser = nil
+        isAuthenticated = false
+        verificationID = nil
     }
 
+    #if !DEMO_MODE
     private func fetchUserDoc(uid: String) async {
         let db = Firestore.firestore()
         do {
@@ -126,4 +159,5 @@ final class AuthService {
         }
         isLoading = false
     }
+    #endif
 }

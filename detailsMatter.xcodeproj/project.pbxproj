@@ -1,78 +1,80 @@
 // !$*UTF8*$!
 {
 	archiveVersion = 1;
-	classes = {};
-	objectVersion = 77;
+	classes = {
+	};
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A9BA40950ED048CEBF23F097 /* detailsMatterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4D314E3FBF4AEE8E48FAD3 /* detailsMatterApp.swift */; };
-		6F26C4D9A8DE4257940B6A7A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FD9A7AAC3A439E8B78A871 /* ContentView.swift */; };
-		E4AF968BBFE746A6B9EEBD66 /* SharedComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64526D0FB204AD79743E01A /* SharedComponents.swift */; };
-		70545EB946D54B5EB6E13589 /* DMUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9525AD4946947C8B6CAE7F6 /* DMUser.swift */; };
-		8CC0888C59974C029BADF4C9 /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB6CDB22C94CE6B0054BA8 /* Appointment.swift */; };
-		821F6B83D03541C9A6CB9B80 /* TimeSlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28C3DE16094413B9B5892D5 /* TimeSlot.swift */; };
-		6D58023E82224510B1CF33D5 /* DetailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD2840300494C718369C5B2 /* DetailService.swift */; };
-		C5D2777D2EAC4AD5AE668CCA /* VehicleInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA55946623154048B822E667 /* VehicleInfo.swift */; };
-		932FE3D7E03A468A9C1B8032 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44BA628ADE24DBF9CC4ACBF /* AuthService.swift */; };
 		03B1311305C34B228B2CD0A1 /* FirestoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B11256BE4C4FB4B3E81C9D /* FirestoreService.swift */; };
-		2BC7867DE0614FB2A9D2BD16 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6D24845DA94B82B68B6B59 /* AuthViewModel.swift */; };
 		07720BA5F5824F90BEAC4332 /* ClientHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299364F7D4CE446A81E379E8 /* ClientHomeViewModel.swift */; };
-		B0319D55D4D94B229F689592 /* CalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E78853F277440A9BBABDEF /* CalendarViewModel.swift */; };
-		24B7DC16CF4D4EA7B578556E /* BookingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950E8CB3681142998EE59B1C /* BookingViewModel.swift */; };
-		406D934294B042FDAD762FDB /* AppointmentDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5823038C206D44D3807A4A03 /* AppointmentDetailViewModel.swift */; };
-		228DB847D6B64039AEDD0B22 /* AdminDashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F27D2BA3E5F479D99A10C3B /* AdminDashboardViewModel.swift */; };
 		1B9CF190524A4584973506BF /* AdminSlotsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414FD48633FF4DE8A68A033F /* AdminSlotsViewModel.swift */; };
-		FEA26BD28E2E4001B347648F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7C55C7339F4C5995295116 /* LoginView.swift */; };
-		EE8AB4A595C74649BAD7814A /* SMSVerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0BBD33E06D47AE8F447B67 /* SMSVerificationView.swift */; };
-		ACFB822F88DC4EACA8331D82 /* AdminLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F16A3897494FC5A00485D3 /* AdminLoginView.swift */; };
-		D7BF40CF65D3458C99F22808 /* ClientHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D78B98B9814EFBAA9B5D0A /* ClientHomeView.swift */; };
-		B5E98BC9DB7A4A2E86FFC67E /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3017401840674831823A7A07 /* CalendarView.swift */; };
-		5412C064C7CE4577A1589FF7 /* TimeSlotPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C096583071EB41DAA62E84D0 /* TimeSlotPickerView.swift */; };
+		228DB847D6B64039AEDD0B22 /* AdminDashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F27D2BA3E5F479D99A10C3B /* AdminDashboardViewModel.swift */; };
+		24B7DC16CF4D4EA7B578556E /* BookingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950E8CB3681142998EE59B1C /* BookingViewModel.swift */; };
+		2BC7867DE0614FB2A9D2BD16 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6D24845DA94B82B68B6B59 /* AuthViewModel.swift */; };
 		3E6719E152CF4237918609B8 /* BookingFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D096B0BEC247DA8A95D9A6 /* BookingFormView.swift */; };
-		9AB2A17D173E4FB48F05C49B /* AppointmentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF63DF263B0040F89649FEE6 /* AppointmentDetailView.swift */; };
-		FB0D05742C2040F8A6813431 /* AdminDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C496868B9D15409B900266BA /* AdminDashboardView.swift */; };
-		82C79A520BE244EF8E19FDE5 /* AdminSlotManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7542983A181C41E88580812A /* AdminSlotManagerView.swift */; };
-		C1801D52509E400F84E6FB7A /* AdminAppointmentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB4651270854300AC1F6351 /* AdminAppointmentDetailView.swift */; };
+		406D934294B042FDAD762FDB /* AppointmentDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5823038C206D44D3807A4A03 /* AppointmentDetailViewModel.swift */; };
+		45A412DF2F687292008C02E7 /* DemoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A412DE2F687292008C02E7 /* DemoData.swift */; };
+		5412C064C7CE4577A1589FF7 /* TimeSlotPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C096583071EB41DAA62E84D0 /* TimeSlotPickerView.swift */; };
 		5D4438926FD74604B8D7C703 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1737164A685B4AE492D6F20A /* Assets.xcassets */; };
-		667959B02056403ABE5424A8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3EB6E29DB06D45208FB57F1C /* GoogleService-Info.plist */; };
-		936DE380E00943C9AF108222 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 4C9F86E2C3854572B7F15806 /* FirebaseAuth */; };
+		6D58023E82224510B1CF33D5 /* DetailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD2840300494C718369C5B2 /* DetailService.swift */; };
+		6F26C4D9A8DE4257940B6A7A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FD9A7AAC3A439E8B78A871 /* ContentView.swift */; };
+		70545EB946D54B5EB6E13589 /* DMUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9525AD4946947C8B6CAE7F6 /* DMUser.swift */; };
+		821F6B83D03541C9A6CB9B80 /* TimeSlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28C3DE16094413B9B5892D5 /* TimeSlot.swift */; };
+		82C79A520BE244EF8E19FDE5 /* AdminSlotManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7542983A181C41E88580812A /* AdminSlotManagerView.swift */; };
 		84D25DBC91BA43478963F1D9 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 88BC525F2F7D469983C8ABDA /* FirebaseFirestore */; };
+		8CC0888C59974C029BADF4C9 /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB6CDB22C94CE6B0054BA8 /* Appointment.swift */; };
+		932FE3D7E03A468A9C1B8032 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44BA628ADE24DBF9CC4ACBF /* AuthService.swift */; };
+		936DE380E00943C9AF108222 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 4C9F86E2C3854572B7F15806 /* FirebaseAuth */; };
+		9AB2A17D173E4FB48F05C49B /* AppointmentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF63DF263B0040F89649FEE6 /* AppointmentDetailView.swift */; };
+		A9BA40950ED048CEBF23F097 /* detailsMatterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4D314E3FBF4AEE8E48FAD3 /* detailsMatterApp.swift */; };
+		ACFB822F88DC4EACA8331D82 /* AdminLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F16A3897494FC5A00485D3 /* AdminLoginView.swift */; };
+		B0319D55D4D94B229F689592 /* CalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E78853F277440A9BBABDEF /* CalendarViewModel.swift */; };
+		B5E98BC9DB7A4A2E86FFC67E /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3017401840674831823A7A07 /* CalendarView.swift */; };
+		C1801D52509E400F84E6FB7A /* AdminAppointmentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB4651270854300AC1F6351 /* AdminAppointmentDetailView.swift */; };
+		C5D2777D2EAC4AD5AE668CCA /* VehicleInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA55946623154048B822E667 /* VehicleInfo.swift */; };
+		D7BF40CF65D3458C99F22808 /* ClientHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D78B98B9814EFBAA9B5D0A /* ClientHomeView.swift */; };
+		E4AF968BBFE746A6B9EEBD66 /* SharedComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64526D0FB204AD79743E01A /* SharedComponents.swift */; };
+		EE8AB4A595C74649BAD7814A /* SMSVerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0BBD33E06D47AE8F447B67 /* SMSVerificationView.swift */; };
+		FB0D05742C2040F8A6813431 /* AdminDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C496868B9D15409B900266BA /* AdminDashboardView.swift */; };
+		FEA26BD28E2E4001B347648F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7C55C7339F4C5995295116 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BC4D314E3FBF4AEE8E48FAD3 /* detailsMatterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailsMatterApp.swift; sourceTree = "<group>"; };
-		95FD9A7AAC3A439E8B78A871 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		E64526D0FB204AD79743E01A /* SharedComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedComponents.swift; sourceTree = "<group>"; };
-		C9525AD4946947C8B6CAE7F6 /* DMUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMUser.swift; sourceTree = "<group>"; };
-		A3DB6CDB22C94CE6B0054BA8 /* Appointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
-		B28C3DE16094413B9B5892D5 /* TimeSlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSlot.swift; sourceTree = "<group>"; };
-		6BD2840300494C718369C5B2 /* DetailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailService.swift; sourceTree = "<group>"; };
-		CA55946623154048B822E667 /* VehicleInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleInfo.swift; sourceTree = "<group>"; };
-		A44BA628ADE24DBF9CC4ACBF /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
-		D5B11256BE4C4FB4B3E81C9D /* FirestoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreService.swift; sourceTree = "<group>"; };
-		FD6D24845DA94B82B68B6B59 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
-		299364F7D4CE446A81E379E8 /* ClientHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientHomeViewModel.swift; sourceTree = "<group>"; };
 		13E78853F277440A9BBABDEF /* CalendarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewModel.swift; sourceTree = "<group>"; };
-		950E8CB3681142998EE59B1C /* BookingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingViewModel.swift; sourceTree = "<group>"; };
-		5823038C206D44D3807A4A03 /* AppointmentDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentDetailViewModel.swift; sourceTree = "<group>"; };
-		7F27D2BA3E5F479D99A10C3B /* AdminDashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminDashboardViewModel.swift; sourceTree = "<group>"; };
-		414FD48633FF4DE8A68A033F /* AdminSlotsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminSlotsViewModel.swift; sourceTree = "<group>"; };
-		7C7C55C7339F4C5995295116 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		CF0BBD33E06D47AE8F447B67 /* SMSVerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSVerificationView.swift; sourceTree = "<group>"; };
-		34F16A3897494FC5A00485D3 /* AdminLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminLoginView.swift; sourceTree = "<group>"; };
-		76D78B98B9814EFBAA9B5D0A /* ClientHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientHomeView.swift; sourceTree = "<group>"; };
-		3017401840674831823A7A07 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
-		C096583071EB41DAA62E84D0 /* TimeSlotPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSlotPickerView.swift; sourceTree = "<group>"; };
-		27D096B0BEC247DA8A95D9A6 /* BookingFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingFormView.swift; sourceTree = "<group>"; };
-		EF63DF263B0040F89649FEE6 /* AppointmentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentDetailView.swift; sourceTree = "<group>"; };
-		C496868B9D15409B900266BA /* AdminDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminDashboardView.swift; sourceTree = "<group>"; };
-		7542983A181C41E88580812A /* AdminSlotManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminSlotManagerView.swift; sourceTree = "<group>"; };
-		ADB4651270854300AC1F6351 /* AdminAppointmentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminAppointmentDetailView.swift; sourceTree = "<group>"; };
 		1737164A685B4AE492D6F20A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		27D096B0BEC247DA8A95D9A6 /* BookingFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingFormView.swift; sourceTree = "<group>"; };
+		299364F7D4CE446A81E379E8 /* ClientHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientHomeViewModel.swift; sourceTree = "<group>"; };
+		3017401840674831823A7A07 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		34F16A3897494FC5A00485D3 /* AdminLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminLoginView.swift; sourceTree = "<group>"; };
 		3EB6E29DB06D45208FB57F1C /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		A18C505D70944B38A4D09213 /* Preview Content */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Preview Content"; sourceTree = "<group>"; };
+		414FD48633FF4DE8A68A033F /* AdminSlotsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminSlotsViewModel.swift; sourceTree = "<group>"; };
+		45A412DE2F687292008C02E7 /* DemoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoData.swift; sourceTree = "<group>"; };
+		5823038C206D44D3807A4A03 /* AppointmentDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentDetailViewModel.swift; sourceTree = "<group>"; };
+		6BD2840300494C718369C5B2 /* DetailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailService.swift; sourceTree = "<group>"; };
+		7542983A181C41E88580812A /* AdminSlotManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminSlotManagerView.swift; sourceTree = "<group>"; };
+		76D78B98B9814EFBAA9B5D0A /* ClientHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientHomeView.swift; sourceTree = "<group>"; };
+		7C7C55C7339F4C5995295116 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		7F27D2BA3E5F479D99A10C3B /* AdminDashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminDashboardViewModel.swift; sourceTree = "<group>"; };
+		950E8CB3681142998EE59B1C /* BookingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingViewModel.swift; sourceTree = "<group>"; };
+		95FD9A7AAC3A439E8B78A871 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		98AB59E64F65428995236DCE /* detailsMatter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = detailsMatter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A18C505D70944B38A4D09213 /* Preview Content */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Preview Content"; sourceTree = "<group>"; };
+		A3DB6CDB22C94CE6B0054BA8 /* Appointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
+		A44BA628ADE24DBF9CC4ACBF /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		ADB4651270854300AC1F6351 /* AdminAppointmentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminAppointmentDetailView.swift; sourceTree = "<group>"; };
+		B28C3DE16094413B9B5892D5 /* TimeSlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSlot.swift; sourceTree = "<group>"; };
+		BC4D314E3FBF4AEE8E48FAD3 /* detailsMatterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailsMatterApp.swift; sourceTree = "<group>"; };
+		C096583071EB41DAA62E84D0 /* TimeSlotPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSlotPickerView.swift; sourceTree = "<group>"; };
+		C496868B9D15409B900266BA /* AdminDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminDashboardView.swift; sourceTree = "<group>"; };
+		C9525AD4946947C8B6CAE7F6 /* DMUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMUser.swift; sourceTree = "<group>"; };
+		CA55946623154048B822E667 /* VehicleInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleInfo.swift; sourceTree = "<group>"; };
+		CF0BBD33E06D47AE8F447B67 /* SMSVerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSVerificationView.swift; sourceTree = "<group>"; };
+		D5B11256BE4C4FB4B3E81C9D /* FirestoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreService.swift; sourceTree = "<group>"; };
+		E64526D0FB204AD79743E01A /* SharedComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedComponents.swift; sourceTree = "<group>"; };
+		EF63DF263B0040F89649FEE6 /* AppointmentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentDetailView.swift; sourceTree = "<group>"; };
+		FD6D24845DA94B82B68B6B59 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,20 +90,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8ADBCB3FAA9143138A26BDCE = {
+		107CF12320E4431E9BDDAD80 /* Client */ = {
 			isa = PBXGroup;
 			children = (
-				69515505939B422492370BA1 /* detailsMatter */,
-				C450D560D0694B0192A27F8C /* Products */,
+				76D78B98B9814EFBAA9B5D0A /* ClientHomeView.swift */,
+				3017401840674831823A7A07 /* CalendarView.swift */,
+				C096583071EB41DAA62E84D0 /* TimeSlotPickerView.swift */,
+				27D096B0BEC247DA8A95D9A6 /* BookingFormView.swift */,
+				EF63DF263B0040F89649FEE6 /* AppointmentDetailView.swift */,
 			);
+			path = Client;
 			sourceTree = "<group>";
 		};
-		C450D560D0694B0192A27F8C /* Products */ = {
+		6359CEDFF91140BBBAB91AA4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				98AB59E64F65428995236DCE /* detailsMatter.app */,
+				FA6114961D7440DD885C6813 /* Auth */,
+				107CF12320E4431E9BDDAD80 /* Client */,
+				BF31F856E5604D4294F7833C /* Admin */,
 			);
-			name = Products;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		69515505939B422492370BA1 /* detailsMatter */ = {
@@ -133,13 +141,12 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		BAE5FAC69E814D9C9F5F904B /* Services */ = {
+		8ADBCB3FAA9143138A26BDCE = {
 			isa = PBXGroup;
 			children = (
-				A44BA628ADE24DBF9CC4ACBF /* AuthService.swift */,
-				D5B11256BE4C4FB4B3E81C9D /* FirestoreService.swift */,
+				69515505939B422492370BA1 /* detailsMatter */,
+				C450D560D0694B0192A27F8C /* Products */,
 			);
-			path = Services;
 			sourceTree = "<group>";
 		};
 		90393FD65A99411BAE9E04EA /* ViewModels */ = {
@@ -156,36 +163,14 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
-		6359CEDFF91140BBBAB91AA4 /* Views */ = {
+		BAE5FAC69E814D9C9F5F904B /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				FA6114961D7440DD885C6813 /* Auth */,
-				107CF12320E4431E9BDDAD80 /* Client */,
-				BF31F856E5604D4294F7833C /* Admin */,
+				A44BA628ADE24DBF9CC4ACBF /* AuthService.swift */,
+				D5B11256BE4C4FB4B3E81C9D /* FirestoreService.swift */,
+				45A412DE2F687292008C02E7 /* DemoData.swift */,
 			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		FA6114961D7440DD885C6813 /* Auth */ = {
-			isa = PBXGroup;
-			children = (
-				7C7C55C7339F4C5995295116 /* LoginView.swift */,
-				CF0BBD33E06D47AE8F447B67 /* SMSVerificationView.swift */,
-				34F16A3897494FC5A00485D3 /* AdminLoginView.swift */,
-			);
-			path = Auth;
-			sourceTree = "<group>";
-		};
-		107CF12320E4431E9BDDAD80 /* Client */ = {
-			isa = PBXGroup;
-			children = (
-				76D78B98B9814EFBAA9B5D0A /* ClientHomeView.swift */,
-				3017401840674831823A7A07 /* CalendarView.swift */,
-				C096583071EB41DAA62E84D0 /* TimeSlotPickerView.swift */,
-				27D096B0BEC247DA8A95D9A6 /* BookingFormView.swift */,
-				EF63DF263B0040F89649FEE6 /* AppointmentDetailView.swift */,
-			);
-			path = Client;
+			path = Services;
 			sourceTree = "<group>";
 		};
 		BF31F856E5604D4294F7833C /* Admin */ = {
@@ -196,6 +181,24 @@
 				ADB4651270854300AC1F6351 /* AdminAppointmentDetailView.swift */,
 			);
 			path = Admin;
+			sourceTree = "<group>";
+		};
+		C450D560D0694B0192A27F8C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				98AB59E64F65428995236DCE /* detailsMatter.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA6114961D7440DD885C6813 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				7C7C55C7339F4C5995295116 /* LoginView.swift */,
+				CF0BBD33E06D47AE8F447B67 /* SMSVerificationView.swift */,
+				34F16A3897494FC5A00485D3 /* AdminLoginView.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,8 +212,10 @@
 				DA30A2D53E324566A4EF1833 /* Frameworks */,
 				F23828D125D64DD8906ED51A /* Resources */,
 			);
-			buildRules = ();
-			dependencies = ();
+			buildRules = (
+			);
+			dependencies = (
+			);
 			name = detailsMatter;
 			packageProductDependencies = (
 				4C9F86E2C3854572B7F15806 /* FirebaseAuth */,
@@ -262,7 +267,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D4438926FD74604B8D7C703 /* Assets.xcassets in Resources */,
-				667959B02056403ABE5424A8 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +296,7 @@
 				1B9CF190524A4584973506BF /* AdminSlotsViewModel.swift in Sources */,
 				FEA26BD28E2E4001B347648F /* LoginView.swift in Sources */,
 				EE8AB4A595C74649BAD7814A /* SMSVerificationView.swift in Sources */,
+				45A412DF2F687292008C02E7 /* DemoData.swift in Sources */,
 				ACFB822F88DC4EACA8331D82 /* AdminLoginView.swift in Sources */,
 				D7BF40CF65D3458C99F22808 /* ClientHomeView.swift in Sources */,
 				B5E98BC9DB7A4A2E86FFC67E /* CalendarView.swift in Sources */,
@@ -307,6 +312,103 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		2CB9591746B54085954AF172 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSTCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSTCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"detailsMatter/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.detailsMatter.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C2B6C0F4546E45B9B424C75D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E6A349FD4FD8424BA2B87956 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSTCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSTCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"detailsMatter/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.detailsMatter.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		EACE5630EE4642B2BB54D2A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -368,103 +470,6 @@
 			};
 			name = Debug;
 		};
-		C2B6C0F4546E45B9B424C75D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MTL_FAST_MATH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		2CB9591746B54085954AF172 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSTCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSTCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"detailsMatter/Preview Content\"";
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-ObjC",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.detailsMatter.app;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		E6A349FD4FD8424BA2B87956 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSTCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSTCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"detailsMatter/Preview Content\"";
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-ObjC",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.detailsMatter.app;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -511,7 +516,6 @@
 			productName = FirebaseFirestore;
 		};
 /* End XCSwiftPackageProductDependency section */
-
 	};
 	rootObject = 6F872A4C3C2F4FE48004D40F /* Project object */;
 }
