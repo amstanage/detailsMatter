@@ -24,6 +24,7 @@ SWIFT_FILES = [
     "Models/VehicleInfo.swift",
     "Services/AuthService.swift",
     "Services/FirestoreService.swift",
+    "Services/DemoData.swift",
     "ViewModels/AuthViewModel.swift",
     "ViewModels/ClientHomeViewModel.swift",
     "ViewModels/CalendarViewModel.swift",
