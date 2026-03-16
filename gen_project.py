@@ -353,7 +353,7 @@ pbxproj = f"""// !$*UTF8*$!
 \t\t\t\tMTL_FAST_MATH = YES;
 \t\t\t\tONLY_ACTIVE_ARCH = YES;
 \t\t\t\tSDKROOT = iphoneos;
-\t\t\t\tSWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+\t\t\t\tSWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG DEMO_MODE";
 \t\t\t\tSWIFT_OPTIMIZATION_LEVEL = "-Onone";
 \t\t\t}};
 \t\t\tname = Debug;
