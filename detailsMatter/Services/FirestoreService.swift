@@ -8,7 +8,7 @@ final class FirestoreService {
     static let shared = FirestoreService()
 
     #if !DEMO_MODE
-    private let db = Firestore.firestore()
+    private var db: Firestore { Firestore.firestore() }
     #else
     private var demoSlots: [TimeSlot] = DemoData.generateTimeSlots()
     private var demoAppointments: [Appointment] = DemoData.allAppointments

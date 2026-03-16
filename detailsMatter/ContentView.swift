@@ -22,6 +22,14 @@ struct ContentView: View {
     }
 }
 
-#Preview {
-    ContentView()
+#Preview("Login") {
+    LoginView()
 }
+#Preview("Client Home") {
+    ClientHomeView(user: DemoData.clientUser)
+}
+
+#Preview("Admin Dashboard") {
+    AdminDashboardView()
+}
+
