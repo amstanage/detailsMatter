@@ -1,0 +1,20 @@
+# Claude
+CLAUDE.md
+.claude/
+
+# Xcode
+build/
+DerivedData/
+*.xcuserdata
+xcuserdata/
+
+# Firebase
+GoogleService-Info.plist
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# macOS
+.DS_Store

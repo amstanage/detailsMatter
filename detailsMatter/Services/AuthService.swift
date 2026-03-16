@@ -1,0 +1,129 @@
+import Foundation
+import FirebaseAuth
+import FirebaseFirestore
+
+@Observable
+final class AuthService {
+    static let shared = AuthService()
+
+    var currentUser: DMUser?
+    var isAuthenticated = false
+    var isLoading = true
+    var verificationID: String?
+    var errorMessage: String?
+
+    private var authListener: AuthStateDidChangeListenerHandle?
+
+    private init() {
+        authListener = Auth.auth().addStateDidChangeListener { [weak self] _, firebaseUser in
+            guard let self else { return }
+            if let firebaseUser {
+                Task { await self.fetchUserDoc(uid: firebaseUser.uid) }
+            } else {
+                self.currentUser = nil
+                self.isAuthenticated = false
+                self.isLoading = false
+            }
+        }
+    }
+
+    // MARK: - Phone Auth (Clients)
+
+    func sendVerificationCode(phoneNumber: String) async {
+        errorMessage = nil
+        do {
+            let id = try await PhoneAuthProvider.provider().verifyPhoneNumber(phoneNumber, uiDelegate: nil)
+            verificationID = id
+        } catch {
+            errorMessage = error.localizedDescription
+        }
+    }
+
+    func verifySMSCode(_ code: String, name: String) async {
+        guard let verificationID else {
+            errorMessage = "No verification ID. Please request a new code."
+            return
+        }
+        errorMessage = nil
+        isLoading = true
+        do {
+            let credential = PhoneAuthProvider.provider().credential(withVerificationID: verificationID, verificationCode: code)
+            let result = try await Auth.auth().signIn(with: credential)
+            let uid = result.user.uid
+            let phone = result.user.phoneNumber ?? ""
+
+            let db = Firestore.firestore()
+            let doc = try await db.collection("users").document(uid).getDocument()
+
+            if doc.exists {
+                if let data = doc.data(), let user = DMUser(from: data, id: uid) {
+                    currentUser = user
+                }
+            } else {
+                let user = DMUser(id: uid, phone: phone, name: name, role: "client")
+                try await db.collection("users").document(uid).setData(user.toDictionary())
+                currentUser = user
+            }
+            isAuthenticated = true
+            isLoading = false
+        } catch {
+            errorMessage = error.localizedDescription
+            isLoading = false
+        }
+    }
+
+    // MARK: - Email Auth (Admin)
+
+    func signInAdmin(email: String, password: String) async {
+        errorMessage = nil
+        isLoading = true
+        do {
+            let result = try await Auth.auth().signIn(withEmail: email, password: password)
+            let uid = result.user.uid
+            let db = Firestore.firestore()
+            let doc = try await db.collection("users").document(uid).getDocument()
+
+            guard let data = doc.data(),
+                  let user = DMUser(from: data, id: uid),
+                  user.isAdmin else {
+                errorMessage = "This account is not authorized as admin."
+                try Auth.auth().signOut()
+                isLoading = false
+                return
+            }
+            currentUser = user
+            isAuthenticated = true
+            isLoading = false
+        } catch {
+            errorMessage = error.localizedDescription
+            isLoading = false
+        }
+    }
+
+    // MARK: - Session
+
+    func signOut() {
+        do {
+            try Auth.auth().signOut()
+            currentUser = nil
+            isAuthenticated = false
+            verificationID = nil
+        } catch {
+            errorMessage = error.localizedDescription
+        }
+    }
+
+    private func fetchUserDoc(uid: String) async {
+        let db = Firestore.firestore()
+        do {
+            let doc = try await db.collection("users").document(uid).getDocument()
+            if let data = doc.data(), let user = DMUser(from: data, id: uid) {
+                currentUser = user
+                isAuthenticated = true
+            }
+        } catch {
+            errorMessage = error.localizedDescription
+        }
+        isLoading = false
+    }
+}
